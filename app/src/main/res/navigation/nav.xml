@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/loginFragment">
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.myapplication.loginFragment"
+        android:label="loginFragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_movieMainFragment"
+            app:destination="@id/movieMainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/movieMainFragment"
+        android:name="com.example.myapplication.movieMainFragment"
+        android:label="movieMainFragment" >
+        <action
+            android:id="@+id/action_movieMainFragment_to_bollywoodFragment"
+            app:destination="@id/bollywoodFragment" />
+        <action
+            android:id="@+id/action_movieMainFragment_to_hollywoodFragment"
+            app:destination="@id/hollywoodFragment" />
+        <action
+            android:id="@+id/action_movieMainFragment_to_southFragment"
+            app:destination="@id/southFragment" />
+        <action
+            android:id="@+id/action_movieMainFragment_to_seriesMainFragment"
+            app:destination="@id/seriesMainFragment" />
+        <action
+            android:id="@+id/action_movieMainFragment_to_privetFragment"
+            app:destination="@id/privetFragment" />
+        <action
+            android:id="@+id/action_movieMainFragment_to_movieDetailFragment"
+            app:destination="@id/movieDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/seriesMainFragment"
+        android:name="com.example.myapplication.SeriesMainFragment"
+        android:label="SeriesMainFragment" >
+        <action
+            android:id="@+id/action_seriesMainFragment_to_seriesDetailsFragment"
+            app:destination="@id/seriesDetailsFragment" />
+        <action
+            android:id="@+id/action_seriesMainFragment_to_movieMainFragment"
+            app:destination="@id/movieMainFragment" />
+        <action
+            android:id="@+id/action_seriesMainFragment_to_privetFragment"
+            app:destination="@id/privetFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/privetFragment"
+        android:name="com.example.myapplication.privetFragment"
+        android:label="privetFragment">
+        <action
+            android:id="@+id/action_privetFragment_to_seriesMainFragment"
+            app:destination="@id/seriesMainFragment" />
+        <action
+            android:id="@+id/action_privetFragment_to_playerFragment"
+            app:destination="@id/playerFragment" />
+        <action
+            android:id="@+id/action_privetFragment_to_movieMainFragment"
+            app:destination="@id/movieMainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/hollywoodFragment"
+        android:name="com.example.myapplication.hollywoodFragment"
+        android:label="hollywoodFragment">
+        <action
+            android:id="@+id/action_hollywoodFragment_to_movieDetailFragment"
+            app:destination="@id/movieDetailFragment" />
+        <action
+            android:id="@+id/action_hollywoodFragment_to_bollywoodFragment"
+            app:destination="@id/bollywoodFragment" />
+        <action
+            android:id="@+id/action_hollywoodFragment_to_southFragment"
+            app:destination="@id/southFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bollywoodFragment"
+        android:name="com.example.myapplication.bollywoodFragment"
+        android:label="bollywoodFragment" >
+        <action
+            android:id="@+id/action_bollywoodFragment_to_movieDetailFragment"
+            app:destination="@id/movieDetailFragment" />
+        <action
+            android:id="@+id/action_bollywoodFragment_to_southFragment"
+            app:destination="@id/southFragment" />
+        <action
+            android:id="@+id/action_bollywoodFragment_to_hollywoodFragment"
+            app:destination="@id/hollywoodFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/southFragment"
+        android:name="com.example.myapplication.southFragment"
+        android:label="southFragment" >
+        <action
+            android:id="@+id/action_southFragment_to_movieDetailFragment"
+            app:destination="@id/movieDetailFragment" />
+        <action
+            android:id="@+id/action_southFragment_to_hollywoodFragment"
+            app:destination="@id/hollywoodFragment" />
+        <action
+            android:id="@+id/action_southFragment_to_bollywoodFragment"
+            app:destination="@id/hollywoodFragment"
+            tools:ignore="DuplicateIds" />
+    </fragment>
+    <fragment
+        android:id="@+id/seriesDetailsFragment"
+        android:name="com.example.myapplication.seriesDetailsFragment"
+        android:label="seriesDetailsFragment">
+        <action
+            android:id="@+id/action_seriesDetailsFragment_to_playerFragment"
+            app:destination="@id/playerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/playerFragment"
+        android:name="com.example.myapplication.playerFragment"
+        android:label="playerFragment" />
+    <fragment
+        android:id="@+id/movieDetailFragment"
+        android:name="com.example.myapplication.movieDetailFragment"
+        android:label="movieDetailFragment" >
+        <action
+            android:id="@+id/action_movieDetailFragment_to_playerFragment"
+            app:destination="@id/playerFragment" />
+    </fragment>
+</navigation>
